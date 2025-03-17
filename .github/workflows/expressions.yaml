@@ -3,14 +3,13 @@ name: Expressions
 on:
   pull_request:
   workflow_dispatch:
-
-inputs:
-  debug:
-    type: boolean
-    default: false
-  fail:
-    type: boolean
-    default: false
+    inputs:
+        debug:
+            type: boolean
+            default: false
+        fail:
+            type: boolean
+            default: false
 
 env:
   WORKFLOW_VAR: 'This is a workflow-level variable'
